@@ -8,7 +8,7 @@ const Message = ({ data }) => {
   return (
     <div className="msg-other">
       <div>
-        <img src="/photo.jpg" alt="img" />
+        <img src={data.author.photoURL} alt="img" />
         <span>{data.author.name}</span>
       </div>
       <p> {data.text}</p>
